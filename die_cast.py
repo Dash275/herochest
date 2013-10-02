@@ -1,6 +1,7 @@
 import random
 
 def cast(stcast):
+    '''Expected input: String with valid die roll expression (?x[d]y+?z)'''
     stcast = stcast.replace(" ", "")
     for letter in stcast:
         lscast = stcast.split("+")
