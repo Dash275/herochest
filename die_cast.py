@@ -2,6 +2,12 @@ import random
 import re
 import itertools
 
+def roll(n, x):
+    result = 0
+    for i in range(1, n + 1):
+        result += random.randrange(1, x + 1)
+    return result
+
 def roll_expression(expression):
     result = 0
     expression = expression.replace(" ", "")
